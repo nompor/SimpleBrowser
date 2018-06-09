@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.web.WebView?>
+
+
+<BorderPane xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Controller">
+	<top>
+		<BorderPane styleClass="topView">
+			<left>
+				<FlowPane prefWidth="100">
+					<Button onAction="#onBack" text="戻る"></Button>
+					<Button onAction="#onNext" text="進む"></Button>
+				</FlowPane>
+			</left>
+			<center>
+				<TextField fx:id="addressBar" text="" onKeyPressed="#onAddressBarEvent" ></TextField>
+			</center>
+			<right>
+				<FlowPane prefWidth="100">
+				</FlowPane>
+			</right>
+		</BorderPane>
+	</top>
+	<center>
+		<WebView fx:id="webView"></WebView>
+	</center>
+</BorderPane>
+
