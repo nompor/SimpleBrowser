@@ -8,7 +8,7 @@ public class JSFunctionManager {
 	private WebEngine engine;
 	private JSFunctions functions;
 
-	//JavaScriptの関数を実装します。
+	//JavaScriptの関数を実装します
 	public static JSFunctionManager doCreate(WebEngine engine) {
 		JSFunctionManager manager = new JSFunctionManager();
 		manager.functions = manager.new JSFunctions();
