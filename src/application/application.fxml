@@ -7,9 +7,10 @@
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.web.WebView?>
 
-
+<!-- fx:controllerで関連付けるコントローラクラスを指定 -->
 <BorderPane xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Controller">
 	<top>
+		<!-- 画面ヘッダーの表示 -->
 		<BorderPane styleClass="topView">
 			<left>
 				<FlowPane prefWidth="100">
@@ -27,6 +28,7 @@
 		</BorderPane>
 	</top>
 	<center>
+		<!-- 画面中央のWeb画面表示 -->
 		<WebView fx:id="webView"></WebView>
 	</center>
 </BorderPane>

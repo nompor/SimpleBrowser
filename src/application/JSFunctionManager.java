@@ -3,9 +3,12 @@ package application;
 import javafx.scene.web.WebEngine;
 import netscape.javascript.JSObject;
 
+//JavaScriptの関数を実装するクラス
 public class JSFunctionManager {
 	private WebEngine engine;
 	private JSFunctions functions;
+
+	//JavaScriptの関数を実装します。
 	public static JSFunctionManager doCreate(WebEngine engine) {
 		JSFunctionManager manager = new JSFunctionManager();
 		manager.functions = manager.new JSFunctions();
@@ -24,6 +27,7 @@ public class JSFunctionManager {
 		obj.removeMember("_java");
 	}
 
+	//JavaScriptからconsole.logが実行された時の処理
 	public class JSFunctions{
 		public void log(String s) {
 			System.out.println(s);
